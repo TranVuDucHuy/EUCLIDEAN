@@ -1,0 +1,126 @@
+# depslib dependency file v1.0
+1683477632 source:c:\users\admin\documents\euclidean\draw.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	"Draw.h"
+	"Line.h"
+	"Point.h"
+	"Const.h"
+
+1683477151 source:c:\users\admin\documents\euclidean\line.cpp
+	"Point.h"
+	"Line.h"
+	"Const.h"
+
+1683477219 c:\users\admin\documents\euclidean\point.h
+	"Const.h"
+
+1683477173 c:\users\admin\documents\euclidean\line.h
+	"Point.h"
+	"Const.h"
+
+1683477247 source:c:\users\admin\documents\euclidean\main.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	"ButtonTexture.h"
+	"Line.h"
+	"Point.h"
+	"Draw.h"
+	"Game.h"
+	"Const.h"
+
+1683477197 source:c:\users\admin\documents\euclidean\point.cpp
+	"Point.h"
+	"Const.h"
+
+1682828531 source:c:\users\admin\documents\euclidean\texture.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	<string>
+	<cmath>
+	"Texture.h"
+
+1682828531 c:\users\admin\documents\euclidean\texture.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	<string>
+	<cmath>
+
+1682828471 source:c:\users\admin\documents\euclidean\button.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	<string>
+	<cmath>
+	"Texture.h"
+	"Button.h"
+
+1682828471 c:\users\admin\documents\euclidean\button.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	<string>
+	<cmath>
+
+1683477632 source:c:\users\admin\documents\euclidean\buttontexture.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	<string>
+	"ButtonTexture.h"
+
+1683477632 c:\users\admin\documents\euclidean\buttontexture.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	<string>
+	"Const.h"
+
+1683473808 c:\users\admin\documents\euclidean\draw.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	"ButtonTexture.h"
+	"Line.h"
+	"Point.h"
+	"Const.h"
+
+1683477282 source:c:\users\admin\documents\euclidean\game.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	"ButtonTexture.h"
+	"Line.h"
+	"Point.h"
+	"Draw.h"
+	"Game.h"
+	"Const.h"
+
+1683477267 c:\users\admin\documents\euclidean\game.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<stdio.h>
+	"ButtonTexture.h"
+	"Line.h"
+	"Point.h"
+	"Draw.h"
+	"Const.h"
+
+1683475293 c:\users\admin\documents\euclidean\const.h
+	<SDL.h>
+
