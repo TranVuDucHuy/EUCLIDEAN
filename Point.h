@@ -27,7 +27,7 @@ void setPoints( Point Points[][ TOTAL_POINTS ] );
 /// Number of given points for each content
 void setCurrentPoints( int CurrentPoints[] );
 
-/// Max points can be created for each content
+/// Maximum number of points can be created for each content
 void setMaxPoints( int MaxPoints[] );
 
 /// Point's tests for each content

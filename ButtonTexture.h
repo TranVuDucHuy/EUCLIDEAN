@@ -1,8 +1,7 @@
-
 #ifndef BUTTONTEXTURE_H
 #define BUTTONTEXTURE_H
 
-//Using SDL, SDL_image, SDL_ttf, standard IO, math, and strings
+/// Using SDL, SDL_image, SDL_ttf, standard IO, math, and strings
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>
@@ -55,6 +54,5 @@ struct ButtonTexture
     /// Handles mouse event
     void handleEvent( SDL_Event* e );
 };
-
 
 #endif

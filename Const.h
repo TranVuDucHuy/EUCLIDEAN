@@ -16,6 +16,7 @@ const SDL_Color DARK_RED = {240, 140, 80}; // 240 60 10
 const SDL_Color BROWN = {200, 120, 70};
 const SDL_Color GREY = {250, 250, 250};
 const SDL_Color LIGHT_BROWN = {220, 180, 150};
+const SDL_Color CRIMSON = { 200, 0, 0 };
 
 /// Homothety constants
 const int ratioHomothety = 2079; // 3*3*3*7*11

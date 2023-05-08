@@ -15,6 +15,7 @@ bool Line::operator==( Line l )
     return ( l.A == A && l.B == B );
 };
 
+/// Check if already had line
 bool isExistLine( Line l, Line Lines[], int currentLines )
 {
     for ( int i = 0; i < currentLines; i += 1 ) {
@@ -23,6 +24,7 @@ bool isExistLine( Line l, Line Lines[], int currentLines )
     return false;
 };
 
+/// Check if two lines is parallel to each other
 bool isParallel( Line l1, Line l2 )
 {
     double x1 = l1.A.x - l1.B.x;
@@ -37,6 +39,7 @@ bool isParallel( Line l1, Line l2 )
     return false;
 };
 
+/// Check if point is on line
 bool isInLine ( Point p, Line l )
 {
     double x1 = p.x - l.A.x;
@@ -51,6 +54,7 @@ bool isInLine ( Point p, Line l )
     return false;
 };
 
+/// Line passing through two given points
 Line through ( Point p1, Point p2 )
 {
     Line l;
@@ -113,6 +117,7 @@ Line through ( Point p1, Point p2 )
     return l;
 };
 
+/// Intersection of two given lines
 Point intersection ( Line l1, Line l2 )
 {
     Point p;
@@ -136,6 +141,7 @@ Point intersection ( Line l1, Line l2 )
     return p;
 };
 
+/// Given lines for each content
 void setLines( Line Lines[][ TOTAL_LINES ] )
 {
     for( int j = 0; j < TOTAL_CONTENTS; j += 1 )
@@ -160,6 +166,7 @@ void setLines( Line Lines[][ TOTAL_LINES ] )
     Lines[ 1 ][ 15 ] = Line( Point( 415800, 415800 ) , Point( 1413720, 748440 ) );
 }
 
+/// Number of given lines for each content
 void setCurrentLines( int CurrentLines[] )
 {
     for( int i = 0; i < TOTAL_CONTENTS; i += 1 )
@@ -171,6 +178,7 @@ void setCurrentLines( int CurrentLines[] )
     CurrentLines[ 1 ] = 2;
 }
 
+/// Maximum number of lines can be created for each content
 void setMaxLines ( int MaxLines[] )
 {
     for( int i = 0; i < TOTAL_CONTENTS; i += 1 )
@@ -182,6 +190,7 @@ void setMaxLines ( int MaxLines[] )
     MaxLines[ 1 ] = 4;
 }
 
+/// Line's tests for each content
 void setTestLines ( Line TestLines[] )
 {
     for( int i = 0; i < TOTAL_CONTENTS; i += 1 )

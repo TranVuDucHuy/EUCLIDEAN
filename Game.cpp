@@ -9,11 +9,16 @@
 #include "Game.h"
 #include "Const.h"
 
+/// Choose tool
 void chooseTool ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools[], ButtonTexture ButtonPoints[], ButtonTexture ButtonLines[], Point Points[], Line Lines[],
                  Status &gameStatus, bool &quit, int &MAX_POINTS, int &MAX_LINES, int &currentPoints, int &currentLines, Point testPoints, Line testLines, int Content )
 {
     /// Draw before choosing button
     inMauDiemDoan ( renderer, Points, Lines, currentPoints, currentLines );
+
+    /// Paint the buttons avalible to be used
+    renderColorAvalible( renderer, ButtonPoints, 49, 49 + currentPoints, LIGHT_ORANGE );
+    renderColorAvalible( renderer, ButtonLines, 14, 14 + currentLines, LIGHT_ORANGE );
 
     /// Paint the buttons avalible to be used
     if( currentPoints < MAX_POINTS )
@@ -38,6 +43,16 @@ void chooseTool ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTool
         }
 
         /// Handle button events
+        for( int i = 0; i < 14 + currentLines; i += 1 )
+        {
+            ButtonLines[ i ].handleEvent( &e );
+        }
+
+        for( int i = 0; i < 49 + currentPoints; i += 1 )
+        {
+            ButtonPoints[ i ].handleEvent( &e );
+        }
+
         if( currentPoints < MAX_POINTS )
         {
             ButtonTools[ NEW_POINT ].handleEvent( &e );
@@ -77,7 +92,8 @@ void chooseTool ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTool
     /// Draw after choosing button
     renderAll ( renderer, ButtonTools, ButtonPoints, ButtonLines, Points, Lines, currentPoints, currentLines, Content );
 }
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Make point
 void makePoint ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools[], ButtonTexture ButtonPoints[], ButtonTexture ButtonLines[], Point Points[], Line Lines[],
                  Status &gameStatus, bool &quit, int From[], int &had, int &currentPoints, int &currentLines, int Content )
 {
@@ -186,7 +202,7 @@ void makePoint ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools
                 Points[ 49 + currentPoints ] = p;
                 currentPoints += 1;
                 printf( "Point %d : (%1.2f, %1.2f) \n", currentPoints, ( p.x/ratioHomothety - 40 )/80 - 2 , 7 - ( p.y/ratioHomothety - 40 )/80 );
-                //printf( "Point %d : (%1.2f, %1.2f) \n", currentPoints, p.x , p.y);
+                printf( "Point %d : (%1.2f, %1.2f) \n", currentPoints, p.x , p.y);
             }
         }
 
@@ -209,6 +225,7 @@ void makePoint ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools
 
 }
 
+/// Make line
 void makeLine ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools[], ButtonTexture ButtonPoints[], ButtonTexture ButtonLines[], Point Points[], Line Lines[],
                  Status &gameStatus, bool &quit, int From[], int &had, int &currentPoints, int &currentLines, int Content )
 {
@@ -318,7 +335,7 @@ void makeLine ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools[
                 Lines[ 14 + currentLines ] = l;
                 currentLines += 1;
                 printf( "Line %d : (%1.2f, %1.2f); (%1.2f, %1.2f) \n", currentLines, ( l.A.x/ratioHomothety - 40 )/80 - 2 , 7 - ( l.A.y/ratioHomothety - 40 )/80 , ( l.B.x/ratioHomothety - 40 )/80 - 2 , 7 - ( l.B.y/ratioHomothety - 40 )/80 ) ;
-                //printf( "Line %d : (%1.2f, %1.2f); (%1.2f, %1.2f) \n", currentLines, l.A.x, l.A.y, l.B.x, l.B.y ) ;
+                printf( "Line %d : (%1.2f, %1.2f); (%1.2f, %1.2f) \n", currentLines, l.A.x, l.A.y, l.B.x, l.B.y ) ;
             }
         }
 
@@ -340,6 +357,7 @@ void makeLine ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools[
     renderAll ( renderer, ButtonTools, ButtonPoints, ButtonLines, Points, Lines, currentPoints, currentLines, Content );
 }
 
+/// Choose content
 void chooseMenu ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonMenu[], Status &gameStatus, bool &quit,
                  int &Content, int &currentPoints, int &currentLines, int CurrentPoints[], int CurrentLines[] )
 {
@@ -389,6 +407,7 @@ void chooseMenu ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonMenu
     inKhungMenu ( renderer );
 }
 
+/// Result
 void endResult ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonMenu[], Status &gameStatus, bool &quit )
 {
     /// Draw before choosing button

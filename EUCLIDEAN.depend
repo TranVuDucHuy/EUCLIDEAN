@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1683477632 source:c:\users\admin\documents\euclidean\draw.cpp
+1683559627 source:c:\users\admin\documents\euclidean\draw.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -9,19 +9,19 @@
 	"Point.h"
 	"Const.h"
 
-1683477151 source:c:\users\admin\documents\euclidean\line.cpp
+1683560052 source:c:\users\admin\documents\euclidean\line.cpp
 	"Point.h"
 	"Line.h"
 	"Const.h"
 
-1683477219 c:\users\admin\documents\euclidean\point.h
+1683535914 c:\users\admin\documents\euclidean\point.h
 	"Const.h"
 
-1683477173 c:\users\admin\documents\euclidean\line.h
+1683535914 c:\users\admin\documents\euclidean\line.h
 	"Point.h"
 	"Const.h"
 
-1683477247 source:c:\users\admin\documents\euclidean\main.cpp
+1683534698 source:c:\users\admin\documents\euclidean\main.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -33,7 +33,7 @@
 	"Game.h"
 	"Const.h"
 
-1683477197 source:c:\users\admin\documents\euclidean\point.cpp
+1683560052 source:c:\users\admin\documents\euclidean\point.cpp
 	"Point.h"
 	"Const.h"
 
@@ -72,7 +72,7 @@
 	<string>
 	<cmath>
 
-1683477632 source:c:\users\admin\documents\euclidean\buttontexture.cpp
+1683537933 source:c:\users\admin\documents\euclidean\buttontexture.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -80,7 +80,7 @@
 	<string>
 	"ButtonTexture.h"
 
-1683477632 c:\users\admin\documents\euclidean\buttontexture.h
+1683551942 c:\users\admin\documents\euclidean\buttontexture.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -88,7 +88,7 @@
 	<string>
 	"Const.h"
 
-1683473808 c:\users\admin\documents\euclidean\draw.h
+1683535505 c:\users\admin\documents\euclidean\draw.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -98,7 +98,7 @@
 	"Point.h"
 	"Const.h"
 
-1683477282 source:c:\users\admin\documents\euclidean\game.cpp
+1683560110 source:c:\users\admin\documents\euclidean\game.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -121,6 +121,6 @@
 	"Draw.h"
 	"Const.h"
 
-1683475293 c:\users\admin\documents\euclidean\const.h
+1683559468 c:\users\admin\documents\euclidean\const.h
 	<SDL.h>
 

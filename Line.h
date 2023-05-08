@@ -39,7 +39,7 @@ void setLines( Line Lines[][ TOTAL_LINES ] );
 /// Number of given lines for each content
 void setCurrentLines ( int CurrentLines[] );
 
-/// Max lines can be created for each content
+/// Maximum number of lines can be created for each content
 void setMaxLines ( int MaxLines[] );
 
 /// Line's tests for each content

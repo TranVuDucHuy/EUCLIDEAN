@@ -6,6 +6,15 @@ bool Point::operator==( Point p )
     return ( ( p.x == x ) && ( p.y == y ) );
 };
 
+Point& Point::operator=( const Point& p )
+{
+    x = p.x;
+    y = p.y;
+
+    return *this;
+}
+
+/// Check if already had point
 bool isExistPoint( Point p, Point Points[], int currentPoints )
 {
     for( int i = 0; i < currentPoints; i += 1 )
@@ -18,14 +27,17 @@ bool isExistPoint( Point p, Point Points[], int currentPoints )
     return false;
 };
 
-Point& Point::operator=( const Point& p )
+/// Check if point is inside the board
+bool isInside( Point p )
 {
-    x = p.x;
-    y = p.y;
-
-    return *this;
+    if( ( p.x >= 200*ratioHomothety ) && ( p.x <= 680*ratioHomothety ) && ( p.y >= 120*ratioHomothety ) && ( p.y <= 600*ratioHomothety ) )
+    {
+        return true;
+    }
+    return false;
 }
 
+/// Given points for each content
 void setPoints( Point Points[][ TOTAL_POINTS ] )
 {
     for( int j = 0; j < TOTAL_CONTENTS; j += 1 )
@@ -40,6 +52,7 @@ void setPoints( Point Points[][ TOTAL_POINTS ] )
     Points[ 1 ][ 49]  = Point( 727650, 519750 );
 }
 
+/// Number of given points for each content
 void setCurrentPoints( int CurrentPoints[] )
 {
     for( int i = 0; i < TOTAL_CONTENTS; i += 1 )
@@ -51,6 +64,7 @@ void setCurrentPoints( int CurrentPoints[] )
     CurrentPoints[ 1 ] = 1;
 }
 
+/// Maximum number of points can be created for each content
 void setMaxPoints( int MaxPoints[] )
 {
     for( int i = 0; i < TOTAL_CONTENTS; i += 1)
@@ -62,6 +76,7 @@ void setMaxPoints( int MaxPoints[] )
     MaxPoints[ 1 ] = 2;
 }
 
+/// Point's tests for each content
 void setTestPoints( Point TestPoints[] )
 {
     for( int i = 0; i < TOTAL_CONTENTS; i += 1 )
@@ -73,11 +88,3 @@ void setTestPoints( Point TestPoints[] )
     TestPoints[ 1 ] = Point( 200*ratioHomothety , 120*ratioHomothety );
 }
 
-bool isInside( Point p )
-{
-    if( ( p.x >= 200*ratioHomothety ) && ( p.x <= 680*ratioHomothety ) && ( p.y >= 120*ratioHomothety ) && ( p.y <= 600*ratioHomothety ) )
-    {
-        return true;
-    }
-    return false;
-}

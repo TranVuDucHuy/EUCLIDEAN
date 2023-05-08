@@ -1,4 +1,4 @@
-//Using SDL, SDL_image, SDL_ttf, standard IO, math, and strings
+/// Using SDL, SDL_image, SDL_ttf, standard IO, math, and strings
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>
@@ -160,7 +160,3 @@ void ButtonTexture::handleEvent( SDL_Event* e )
 		}
 	}
 }
-
-
-
-
