@@ -9,7 +9,7 @@
 	"Point.h"
 	"Const.h"
 
-1683560052 source:c:\users\admin\documents\euclidean\line.cpp
+1683562598 source:c:\users\admin\documents\euclidean\line.cpp
 	"Point.h"
 	"Line.h"
 	"Const.h"
@@ -33,7 +33,7 @@
 	"Game.h"
 	"Const.h"
 
-1683560052 source:c:\users\admin\documents\euclidean\point.cpp
+1683562598 source:c:\users\admin\documents\euclidean\point.cpp
 	"Point.h"
 	"Const.h"
 
@@ -98,7 +98,7 @@
 	"Point.h"
 	"Const.h"
 
-1683560110 source:c:\users\admin\documents\euclidean\game.cpp
+1683565081 source:c:\users\admin\documents\euclidean\game.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>

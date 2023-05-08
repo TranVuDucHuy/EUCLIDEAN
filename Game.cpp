@@ -202,7 +202,7 @@ void makePoint ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools
                 Points[ 49 + currentPoints ] = p;
                 currentPoints += 1;
                 printf( "Point %d : (%1.2f, %1.2f) \n", currentPoints, ( p.x/ratioHomothety - 40 )/80 - 2 , 7 - ( p.y/ratioHomothety - 40 )/80 );
-                printf( "Point %d : (%1.2f, %1.2f) \n", currentPoints, p.x , p.y);
+                //printf( "Point %d : (%1.2f, %1.2f) \n", currentPoints, p.x , p.y);
             }
         }
 
@@ -335,7 +335,7 @@ void makeLine ( SDL_Renderer * renderer, SDL_Event e, ButtonTexture ButtonTools[
                 Lines[ 14 + currentLines ] = l;
                 currentLines += 1;
                 printf( "Line %d : (%1.2f, %1.2f); (%1.2f, %1.2f) \n", currentLines, ( l.A.x/ratioHomothety - 40 )/80 - 2 , 7 - ( l.A.y/ratioHomothety - 40 )/80 , ( l.B.x/ratioHomothety - 40 )/80 - 2 , 7 - ( l.B.y/ratioHomothety - 40 )/80 ) ;
-                printf( "Line %d : (%1.2f, %1.2f); (%1.2f, %1.2f) \n", currentLines, l.A.x, l.A.y, l.B.x, l.B.y ) ;
+                //printf( "Line %d : (%1.2f, %1.2f); (%1.2f, %1.2f) \n", currentLines, l.A.x, l.A.y, l.B.x, l.B.y ) ;
             }
         }
 
